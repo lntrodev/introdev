@@ -1,1 +1,16 @@
-theme: jekyll-theme-minimal
+# site settings
+title: IntroDev
+email: introdev3@gmail.com
+description:
+city: Teresina
+state: PI
+country: Brasil
+
+# social settings
+facebook_url:
+
+# build settings
+markdown: kramdown
+
+sass:
+  style: compressed
