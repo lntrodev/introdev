@@ -1,0 +1,46 @@
+.speaker {
+  background-color: white;
+  color: black;
+
+  header.major {
+
+    h2 {
+      color: black;
+    }
+
+    > :first-child {
+      &:after {
+        background-color: black;
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0;
+  }
+
+  &__description {
+    background-color: rgba(36, 41, 67, .08);
+    max-width: 17rem;
+    min-height: 6rem;
+    padding: .3rem 2rem;
+  }
+
+  &__name {
+    margin-bottom: .3rem;
+    font-weight: 800;
+  }
+
+  &__item {
+    list-style: none;
+    padding: .5rem;
+    text-align: center;
+
+    img {
+      border-radius: 50%;
+    }
+  }
+}

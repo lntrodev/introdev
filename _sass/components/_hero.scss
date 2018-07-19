@@ -1,0 +1,9 @@
+.hero {
+  header.major {
+    > :first-child {
+      &:after {
+        background-color: white;
+      }
+    }
+  }
+}
