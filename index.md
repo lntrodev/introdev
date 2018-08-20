@@ -59,6 +59,13 @@ nav-menu: true
 						<small class="speaker__talk">O mundo das Single Page Applications (SPA's)</small>
 					</div>
 				</li>
+				<li class="speaker__item">
+					<img src="assets/images/feliciano_santana.jpg" alt="Feliciano Santana" />
+					<div class="speaker__description">
+						<p class="speaker__name">Feliciano Santana</p>
+						<small class="speaker__talk">Criando e monetizando jogos por diversão e lucro</small>
+					</div>
+				</li>
 			</ul>
 		</div>
 	</section>
