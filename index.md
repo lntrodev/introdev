@@ -39,10 +39,10 @@ nav-menu: true
 
 			<ul class="speaker__list">
 				<li class="speaker__item">
-					<img src="assets/images/marcle_rodrigues.jpg" alt="Marcle Rodrigues" />
+					<img src="assets/images/jonhnny.jpg" alt="Jonhnny Werlley" />
 					<div class="speaker__description">
-						<p class="speaker__name">Marcle Rodrigues</p>
-						<small class="speaker__talk">Functional Programming 101</small>
+						<p class="speaker__name">Jonhnny Werlley</p>
+						<small class="speaker__talk">React Native: desenvolva aplicativos de alta performance para Android e iOS</small>
 					</div>
 				</li>
 				<li class="speaker__item">
