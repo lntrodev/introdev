@@ -28,6 +28,10 @@ nav-menu: true
 				mesma. As palestras abordam temas relacionados a diversas subáreas como
 				desenvolvimento web, desenvolvimento de jogos ou de softwares em geral.
 			</p>
+			<p>
+				Informamos ainda que o evento é <b>gratuito</b> e que todos os presentes
+				receberão <b>certificado de participação</b> equivalente a 4 horas.
+			</p>
 		</div>
 	</section>
 

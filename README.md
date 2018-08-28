@@ -1,5 +1,5 @@
 # IntroDev
-Available in ***REMOVED***/
+Available in http://introdev.xyz/
 
 ## Run locally
 ```shell
