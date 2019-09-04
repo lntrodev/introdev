@@ -4,7 +4,33 @@ require(`dotenv`).config({
 
 module.exports = {
   siteMetadata: {
-    siteTitleAlt: `Cara - Gatsby Starter Portfolio`,
+    siteTitleAlt: `IntroDev`,
+    speakersData: [
+      {
+        name: 'Samuel Flores',
+        talkTitle: 'Introdução à Regex',
+        talkDescription: '',
+        imageSrc: 'samuel-flores.jpg'
+      },
+      {
+        name: 'Rodrigo Ulisses',
+        talkTitle: 'Precificando projetos',
+        talkDescription: '',
+        imageSrc: 'rodrigo-ulisses.jpeg'
+      },
+      {
+        name: 'Neto Chaves',
+        talkTitle: 'Open source: O que é esse mundo e como entrar nele',
+        talkDescription: '',
+        imageSrc: 'neto-chaves.jpeg'
+      },
+      {
+        name: 'Rafael Belo',
+        talkTitle: 'Builders - O must-have de todo dev front-end',
+        talkDescription: '',
+        imageSrc: 'rafael-belo.png'
+      }
+    ]
   },
   plugins: [
     {
