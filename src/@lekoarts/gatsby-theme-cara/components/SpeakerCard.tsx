@@ -7,9 +7,18 @@ type SpeakerCardProps = {
   children: React.ReactNode
   bg: string
   imageSrc: string
+  role: string
+  company: string
 }
 
-const SpeakerCard = ({ name, children, bg, imageSrc }: SpeakerCardProps) => (
+const SpeakerCard = ({
+  name,
+  role,
+  company,
+  children,
+  bg,
+  imageSrc
+}: SpeakerCardProps) => (
   <div
     sx={{
       width: `100%`,
@@ -49,9 +58,28 @@ const SpeakerCard = ({ name, children, bg, imageSrc }: SpeakerCardProps) => (
     </div>
     <div
       sx={{
-        lineHeight: 1,
+        letterSpacing: `wide`,
+        fontSize: 1,
+        lineHeight: 1
+      }}
+    >
+      {role}
+      <br />
+      <a
+        href={company.url}
+        sx={{
+          color: '#fff',
+          textDecoration: 'none'
+        }}
+      >
+        @{company.name}
+      </a>
+    </div>
+    <div
+      sx={{
         opacity: 0.75,
-        textShadow: `0 2px 10px rgba(0, 0, 0, 0.3)`
+        textShadow: `0 2px 10px rgba(0, 0, 0, 0.3)`,
+        lineHeight: 1
       }}
     >
       {children}

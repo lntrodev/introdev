@@ -23,6 +23,12 @@ const useSiteMetadata = () => {
           author
           speakersData {
             name
+            role
+            company {
+              name
+              url
+            }
+            talkTitle
             imageSrc
             talkTitle
           }

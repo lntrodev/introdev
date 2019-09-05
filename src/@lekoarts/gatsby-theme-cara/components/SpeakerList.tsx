@@ -17,9 +17,12 @@ const SpeakerList = () => {
   return (
     <Fragment>
       {
-        speakersData.map(({ name, talkTitle, imageSrc }, index) => (
+        speakersData.map(
+          ({ name, role, company, talkTitle, imageSrc }, index) => (
           <SpeakerCard
             name={ name }
+            role={ role }
+            company = { company }
             bg={ CARD_BG_LIST[index] }
             imageSrc={ imageSrc }
           >

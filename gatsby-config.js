@@ -47,23 +47,43 @@ module.exports = {
     speakersData: [
       {
         name: 'Samuel Flores',
-        imageSrc: 'samuel-flores.jpg',
-        talkTitle: 'Introdução à Regex'
+        role: 'Desenvolvedor Back-end',
+        company:{
+          name: 'Codeminer42',
+          url: 'http://codeminer42.com'
+        },
+        talkTitle: 'Introdução à Regex',
+        imageSrc: 'samuel-flores.jpg'
       },
       {
         name: 'Rodrigo Ulisses',
-        imageSrc: 'rodrigo-ulisses.jpeg',
-        talkTitle: 'Precificando projetos'
+        role: 'Desenvolvedor Back-end',
+        company:{
+          name: 'Devworks',
+          url: '#'
+        },
+        talkTitle: 'Precificando projetos',
+        imageSrc: 'rodrigo-ulisses.jpeg'
       },
       {
         name: 'Neto Chaves',
-        imageSrc: 'neto-chaves.jpeg',
-        talkTitle: 'Open source: O que é esse mundo e como entrar nele'
+        role: 'Desenvolvedor Front-end',
+        company:{
+          name: 'Codeminer42',
+          url: 'http://codeminer42.com'
+        },
+        talkTitle: 'Open source: O que é esse mundo e como entrar nele',
+        imageSrc: 'neto-chaves.jpeg'
       },
       {
         name: 'Rafael Belo',
-        imageSrc: 'rafael-belo.png',
-        talkTitle: 'Builders - O "must have" de todo dev front-end'
+        role: 'Desenvolvedor Back-end',
+        company:{
+          name: 'Nutrebem',
+          url: 'http://nutrebem.com.br'
+        },
+        talkTitle: 'Builders - O must-have de todo dev front-end',
+        imageSrc: 'rafael-belo.png'
       }
     ]
   },
