@@ -1,5 +1,6 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
+import SEO from "./seo"
 
 const Hero = ({ children }) => (
   <div
@@ -8,6 +9,7 @@ const Hero = ({ children }) => (
       padding: '0 15%'
     }}
   >
+    <SEO />
     <h2>28 de Setembro - 8:00 às 12:00</h2>
     { children }
     <div sx={{ marginTop: '1em' }}>

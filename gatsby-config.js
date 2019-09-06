@@ -1,10 +1,14 @@
 require(`dotenv`).config({
   path: `.env`,
-})
+});
 
 module.exports = {
   siteMetadata: {
+    siteTitle: `IntroDev`,
     siteTitleAlt: `IntroDev`,
+    siteUrl: `https://introdev.xyz`,
+    siteDescription: `O IntroDev é um evento dedicado à abordagem de tecnologias, conceitos e habilidades importantes para o mercado de trabalho atual na área de TI. Visto que existe um grande número de recém-formados nos cursos relacionados à área que possuem dificuldade em ingressar no mercado de trabalho, o IntroDev surge como uma tentativa de diminuir essa lacuna existente entre a academia e o mercado.`,
+    siteImage: `/introdev.svg`,
     speakersData: [
       {
         name: 'Samuel Flores',
@@ -33,6 +37,10 @@ module.exports = {
     ]
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-react-helmet`,
+      optipons: {},
+    },
     {
       resolve: `@lekoarts/gatsby-theme-cara`,
       options: {},
