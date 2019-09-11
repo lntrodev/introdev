@@ -48,8 +48,7 @@ module.exports = {
       {
         name: 'Samuel Flores',
         imageSrc: 'samuel-flores.jpg',
-        talkTitle: 'Introdução à Regex',
-
+        talkTitle: 'Introdução à Regex'
       },
       {
         name: 'Rodrigo Ulisses',

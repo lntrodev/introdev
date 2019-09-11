@@ -44,7 +44,7 @@ const Schedule = () => {
                 display: 'flex',
                 justifyContent: 'center',
                 alignItems: 'center',
-                py: 2,
+                py: [1, 2],
                 px: item.id !== 2 ? 1 : 3
               }}
             >
@@ -94,7 +94,7 @@ const Schedule = () => {
               py: 2
             }}
           >
-            <h3>{item.description}</h3>
+            <h4>{item.description}</h4>
           </td>
         </tr>
       )

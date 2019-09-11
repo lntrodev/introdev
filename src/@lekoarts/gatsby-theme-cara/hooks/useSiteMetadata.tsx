@@ -24,6 +24,7 @@ const useSiteMetadata = () => {
           speakersData {
             name
             imageSrc
+            talkTitle
           }
           talksData {
             id

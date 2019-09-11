@@ -1,6 +1,6 @@
 /** @jsx jsx */
-import React from "react"
-import { jsx } from "theme-ui"
+import React from 'react'
+import { jsx } from 'theme-ui'
 
 type SpeakerCardProps = {
   name: string
@@ -22,16 +22,16 @@ const SpeakerCard = ({ name, children, bg, imageSrc }: SpeakerCardProps) => (
       color: `white`,
       background: bg || `none`,
       transition: `all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important`,
-      "&:hover": {
+      '&:hover': {
         color: `white !important`,
         transform: `translateY(-5px)`,
-        boxShadow: `xl`,
-      },
+        boxShadow: `xl`
+      }
     }}
   >
     <img
       sx={{
-        maxWidth: `100%`,
+        maxWidth: `100%`
       }}
       src={imageSrc}
       alt={name}
@@ -42,12 +42,20 @@ const SpeakerCard = ({ name, children, bg, imageSrc }: SpeakerCardProps) => (
         pt: 2,
         fontSize: [2, 3],
         fontWeight: `medium`,
-        lineHeight: 1,
+        lineHeight: 1
       }}
     >
       {name}
     </div>
-    <div sx={{ opacity: 0.75, textShadow: `0 2px 10px rgba(0, 0, 0, 0.3)` }}>{children}</div>
+    <div
+      sx={{
+        lineHeight: 1,
+        opacity: 0.75,
+        textShadow: `0 2px 10px rgba(0, 0, 0, 0.3)`
+      }}
+    >
+      {children}
+    </div>
   </div>
 )
 
