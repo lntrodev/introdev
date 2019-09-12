@@ -24,7 +24,12 @@ const Schedule = () => {
     const clickCallback = () => handleRowClick(item.id)
     const itemRows = [
       <tr
-        sx={{ ':hover': { background: '#bac7ff' } }}
+        sx={{
+          ':hover': { background: '#bac7ff' },
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center'
+        }}
         onClick={clickCallback}
         key={item.id}
       >
@@ -35,22 +40,23 @@ const Schedule = () => {
             pt: 2,
             fontSize: [1, 2],
             lineHeight: 1,
-            cursor: 'pointer'
+            cursor: 'pointer',
+            width: '100%'
           }}
         >
           <th>
             <div
               sx={{
                 display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
+                flex: 1,
                 py: [1, 2],
-                px: item.id !== 2 ? 1 : 3
+                px: [1, 1, item.id !== 2 ? 1 : 3]
               }}
             >
               <div
                 sx={{
-                  marginLeft: 10
+                  marginLeft: 10,
+                  display: ['none', 'none', 'block']
                 }}
               >
                 {item.id !== 2 ? (
@@ -62,7 +68,7 @@ const Schedule = () => {
               <div
                 sx={{
                   fontSize: [2, 3],
-                  maxWidth: 512,
+                  flexGrow: 1,
                   mx: 'auto',
                   px: 20,
                   py: 2
@@ -70,7 +76,7 @@ const Schedule = () => {
               >
                 {item.time}
               </div>
-              <div>
+              <div sx={{ fontSize: [1, 2] }}>
                 {item.title}
                 <div sx={{ fontSize: 14, color: '#EEE923' }}>
                   {item.speaker}
@@ -86,6 +92,7 @@ const Schedule = () => {
         <tr key={item.title}>
           <td
             sx={{
+              display: ['none', 'none', 'block'],
               boxShadow: '0 0 1px 3px rgba(0, 0, 0, .125)',
               opacity: 0.75,
               textShadow: `0 2px 10px rgba(0, 0, 0, 0.3)`,
@@ -112,11 +119,14 @@ const Schedule = () => {
     <div>
       <table
         sx={{
-          width: '100%',
-          padding: 50,
+          display: 'flex',
+          flexDirection: 'column',
+          flexWrap: 'wrap',
+
           background:
             'linear-gradient(to right, SlateBlue 0%, DeepSkyBlue 100%)',
           my: 50,
+          p: 40,
           color: '#fff'
         }}
       >
