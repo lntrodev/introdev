@@ -23,9 +23,15 @@ const useSiteMetadata = () => {
           author
           speakersData {
             name
-            talkTitle
-            talkDescription
             imageSrc
+            talkTitle
+          }
+          talksData {
+            id
+            title
+            description
+            time
+            speaker
           }
         }
       }
