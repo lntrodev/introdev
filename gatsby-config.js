@@ -48,17 +48,17 @@ module.exports = {
       {
         name: 'Samuel Flores',
         role: 'Desenvolvedor Back-end',
-        company:{
+        company: {
           name: 'Codeminer42',
           url: 'http://codeminer42.com'
         },
-        talkTitle: 'Introdução à Regex',
+        talkTitle: 'Introdução à Regex',
         imageSrc: 'samuel-flores.jpg'
       },
       {
         name: 'Rodrigo Ulisses',
         role: 'Desenvolvedor Back-end',
-        company:{
+        company: {
           name: 'Devworks',
           url: '#'
         },
@@ -68,7 +68,7 @@ module.exports = {
       {
         name: 'Neto Chaves',
         role: 'Desenvolvedor Front-end',
-        company:{
+        company: {
           name: 'Codeminer42',
           url: 'http://codeminer42.com'
         },
@@ -78,7 +78,7 @@ module.exports = {
       {
         name: 'Rafael Belo',
         role: 'Desenvolvedor Back-end',
-        company:{
+        company: {
           name: 'Nutrebem',
           url: 'http://nutrebem.com.br'
         },

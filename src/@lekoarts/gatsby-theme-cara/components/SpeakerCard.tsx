@@ -8,7 +8,7 @@ type SpeakerCardProps = {
   bg: string
   imageSrc: string
   role: string
-  company: string
+  company: object
 }
 
 const SpeakerCard = ({
