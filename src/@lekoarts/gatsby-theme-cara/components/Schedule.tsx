@@ -1,10 +1,9 @@
 /** @jsx jsx */
 
 import React, { useState } from 'react'
-import MaterialTable from 'material-table'
 import useSiteMetadata from '../hooks/useSiteMetadata'
 import Icon from './icon'
-import { jsx, Flex } from 'theme-ui'
+import { jsx } from 'theme-ui'
 
 const Schedule = () => {
   const { talksData } = useSiteMetadata()
@@ -36,7 +35,7 @@ const Schedule = () => {
         <td
           sx={{
             boxShadow: '0 0 0 3px rgba(0, 0, 0, .125)',
-            letterSpacing: `wide`,
+            letterSpacing: 'wide',
             pt: 2,
             fontSize: [1, 2],
             lineHeight: 1,
@@ -50,7 +49,8 @@ const Schedule = () => {
                 display: 'flex',
                 flex: 1,
                 py: [1, 2],
-                px: [1, 1, item.id !== 2 ? 1 : 3]
+                px: [1, 1, item.id !== 2 ? 1 : 3],
+                alignItems: 'center'
               }}
             >
               <div
@@ -122,7 +122,6 @@ const Schedule = () => {
           display: 'flex',
           flexDirection: 'column',
           flexWrap: 'wrap',
-
           background:
             'linear-gradient(to right, SlateBlue 0%, DeepSkyBlue 100%)',
           my: 50,
